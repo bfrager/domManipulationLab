@@ -3,16 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700|Muli:400,300' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div id="container">
-      <h1>Temperature Converter 2000&trade;</h1>
+      <h1>Temperature<br>Converter 2000&trade;</h1>
+      <h6> - - - - - - - - - - - - - - - </h6>
       <h2 id="tempC">0</h2>
       <h2>&deg;C</h2>
-      <form>
-        <input id="tempF" type="text" name="Fahrenheit"><h3>&deg;F</h3>
-      </form>
-      <button id="convert">LET'S DO THIS!</button>
+      <div class="form">
+        <form>
+          <input id="tempF" type="text" name="Fahrenheit"><h3>&deg;F</h3>
+        </form>
+        <button id="convert">LET'S DO THIS!</button>
+      </div>
     </div>
     <script>
       var tempInput = document.getElementById('tempC');
